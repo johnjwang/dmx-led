@@ -1,0 +1,11 @@
+*~
+\#*\#
+.\#*
+[._]*.sw[a-p]
+*.o
+*.out
+*.bin
+*.elf
+*.srec
+*.map
+build/
