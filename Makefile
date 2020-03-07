@@ -26,7 +26,7 @@ CFLAGS += -Ideps/asf/thirdparty/CMSIS/Include
 CFLAGS += -D__$(DEVICE)__ -DDONT_USE_CMSIS_INIT -Dprintf=iprintf
 CFLAGS += -Os
 
-LDFLAGS := -mcpu=$(CPU) -mthumb -nostartfiles -Wl,--gc-sections
+LDFLAGS := -mcpu=$(CPU) -mthumb -Wl,--gc-sections
 LDFLAGS += -Wl,--defsym=STACK_SIZE=$(STACK_SIZE)
 
 OBJS := $(patsubst %.c,$(BUILD_DIR)/%.o,$(SRCS))
