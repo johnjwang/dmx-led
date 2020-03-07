@@ -45,7 +45,7 @@ deps/.:
 	mkdir -p $@
 
 deps/asf-standalone.zip: deps/.
-	wget -nc -O $@ https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en100027 || true
+	wget -nc -O $@ https://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en1000272 || true
 
 deps/asf/.: deps/asf-standalone.zip
 	rm -rf deps/*/
